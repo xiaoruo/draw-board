@@ -1,0 +1,60 @@
+*{
+	margin: 0;padding: 0;
+}
+canvas{
+	border:1px solid #c3c3c3;
+	position: absolute;
+	top: 50px;
+	left: 35%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px #000;
+}
+
+.choose{
+	position: absolute;
+	top: 80px;
+	left: 80px;
+}
+.choose input{
+	display: block;
+	width: 70px;
+	height: 70px;
+	color: #3c3c3c;
+	border:1px solid #c3c3c3;
+	text-decoration: none;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+.choose input:hover{
+	color:#000;
+	font-size: 3.2em;
+}
+#circle{
+	position: absolute;
+	top: 60px;
+	left: 80px;
+	display: none;
+}
+#rectangle{
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	display: none;
+}
+#theWidth{
+	position: absolute;
+	top: 300px;
+	left: 80px;
+	display: none;
+}
+#circle input,#rectangle input,#theWidth input{
+	display: block;
+	width: 70px;
+	height: 30px;
+	border:1px solid #c3c3c3;
+	margin-bottom: 2px;
+	border-radius: 2px;
+}
+.noneBorder{
+	position: absolute;
+}

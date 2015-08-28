@@ -4,49 +4,33 @@
 	<meta charset="UTF-8">
 	<title>canvas画板</title>
 	<link rel="stylesheet" href="./css/style.css" />
-	<script type="text/javascript" src="./js/canvas.js"></script>
+	<link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
 	<div class="choose" id="choose">
-		<label for="drawLine">直线绘制</label>
-		<input type="radio" name="choose" id="drawLine"   title="直线绘制" />
-		<label for="drawCircle">圆形绘制</label>
-		<input type="radio" name="choose" id="drawCircle"   title="圆形绘制" />
-		<label for="drawRectangle">长方形绘制</label>
-		<input type="radio" name="choose" id="drawRectangle"   title="长方形绘制" />
-		<label for="inputText">文字输入</label>
-		<input type="radio" name="choose" id="inputText"   title="文字输入" />
-		<label for="widthChoose">宽度选择</label>
-		<input type="radio" name="choose" id="widthChoose"   title="宽度" />
-		<label for="clear">橡皮擦</label>
-		<input type="radio" name="choose" id="clear"   title="橡皮擦" />
-		<label for="fontInput">涂鸦</label>
-		<input type="radio" name="choose" id="fontInput" title="涂鸦"/>
-		<label for="colorChoose">颜色选择</label>
-		<input type="color" name="choose" id="colorChoose" />
-		<div id="circle">
-			<label>空心</label>
-			<input type="radio" name="circle" title="空心" />
-			<label>实心</label>
-			<input type="radio" name="circle" title="实心" />
-		</div>
-		<div id="rectangle">
-			<label>空心</label>
-			<input type="radio" name="rectangle" title="空心" />
-			<label>实心</label>
-			<input type="radio" name="rectangle" title="实心" />
-		</div>
-		<div id="theWidth">
-			<label>细的</label>
-			<input type="radio" name="theWidth" title="细的">
-			<label>正常</label>
-			<input type="radio" name="theWidth" title="正常">
-			<label>粗的</label>
-			<input type="radio" name="theWidth" title="粗的">
-			<label>超粗</label>
-			<input type="radio" name="theWidth" title="超粗">
-		</div>
+		<a href="javascript:void(0);"title="直线" class="icon icon-arrows-h" id="drawLine"></a>
+		<a href="javascript:void(0);"title="空心" id="drawRectangle">
+			<span class="icon icon-square-o"></span>
+			<span class="icon icon-square none"></span>
+		</a>
+		<a href="javascript:void(0);"title="圆形" id="drawCircle">
+			<span class="icon icon-genderless"></span>
+			<span class="icon icon-controller-record none"></span>
+		</a>
+		<a href="javascript:void(0);"title="文字" class="icon icon-font" id="inputText"></a>
+		<a href="javascript:void(0);"title="涂鸦" class="icon icon-pencil" id="fontInput"></a>
+		<a href="javascript:void(0);"title="橡皮擦" class="icon icon-gradient" id="clear"></a>
+		<a href="javascript:void(0);"title="宽度" id="widthChoose">
+			<span class="icon icon-connection-25 block"></span>
+			<span class="icon icon-connection-50 none"></span>
+			<span class="icon icon-connection-75 none"></span>
+			<span class="icon icon-connection-full none"></span>
+		</a>
+		<a href="javascript:void(0);"title="颜色" id="colorChoose">
+			<input type="color" name="choose" id="theColor" />
+		</a>
 	</div>
 	<canvas id="canvas">当前浏览器不支持canvas，请更换google浏览器~</canvas>
+	<script type="text/javascript" src="./js/canvas.js"></script>
 </body>
 </html>

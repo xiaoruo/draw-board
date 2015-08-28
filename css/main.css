@@ -1,0 +1,70 @@
+*{
+	margin: 0;padding: 0;
+}
+canvas{
+	border:1px solid #c3c3c3;
+	/*position: absolute;*/
+	top: 50px;
+	left: 35%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px #000;
+}
+.choose {
+	width: 70%;
+	height: 50px;
+	margin: 20px auto;
+	border: 1px solid #c3c3c3;
+	box-shadow: 2px 2px 5px #ccc;
+}
+.choose a {
+	display: inline-block;
+	width: 11%;
+	height: 40px;
+	text-align: right;
+	line-height: 50px;
+	font-size: 2.5em;
+	color: #3c3c3c;
+	text-decoration: none;
+}
+.choose a:hover {
+	color: #FFC0CB;
+}
+a.select {
+	border: 2px solid #3c3c3c;
+	border-radius: 2px;
+	margin-top: 2px;
+	width: 50px;
+	text-align: center;
+	display: block;
+	font-size: 1em;
+}
+a.select:hover {
+	border: 2px solid #FFC0CB;
+}
+#circle, #rectangle, #theWidth {
+	position: absolute;
+	float: left;
+}
+#rectangle {
+	left: 28.5%;
+}
+#circle {
+	left: 35.5%;
+}
+#theWidth {
+	left: 52.5%;
+}
+canvas {
+	display: block;
+	margin: 0 auto;
+}
+/*use in js*/
+.none {
+	display: none;
+}
+.block {
+	display: block;
+}
+textarea {
+	position: absolute;
+}
